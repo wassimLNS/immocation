@@ -1,8 +1,5 @@
 .App {
   text-align: center;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
 }
 
 .App-logo {
@@ -18,63 +15,13 @@
 
 .App-header {
   background-color: #282c34;
-  padding: 20px;
-  color: white;
-}
-
-.App-header h1 {
-  margin: 0;
-  font-size: 2rem;
-}
-
-.App-main {
-  flex: 1;
-  padding: 20px;
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
-  gap: 20px;
-  max-width: 1200px;
-  margin: 0 auto;
-  width: 100%;
-}
-
-.map-container {
-  border-radius: 10px;
-  overflow: hidden;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
-
-.location-info {
-  background-color: white;
-  padding: 20px;
-  border-radius: 10px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
-
-.location-info h2 {
-  margin-top: 0;
-  color: #282c34;
-}
-
-.location-info p {
-  margin: 10px 0;
-  color: #666;
-}
-
-@media (min-width: 768px) {
-  .App-main {
-    flex-direction: row;
-    align-items: flex-start;
-  }
-
-  .map-container {
-    flex: 2;
-  }
-
-  .location-info {
-    flex: 1;
-    margin-left: 20px;
-  }
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
 }
 
 .App-link {
@@ -89,3 +36,10 @@
     transform: rotate(360deg);
   }
 }
+
+.map-container {
+  width: 100%;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+} 
